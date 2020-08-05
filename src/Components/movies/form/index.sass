@@ -1,0 +1,122 @@
+@import '../../../consts/variables'
+
+*
+    margin: 0
+    padding: 0
+    border: 0
+
+.movies-form-container
+    width: 75%
+    height: 70vh
+    background-color: $primary
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border-radius: 20px
+    box-shadow: 5px 5px 10px $black
+    p 
+        color: $white
+        font-size: 2em
+        font-weight: bold
+    .input-data-container
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        width: 95%
+        height: 70%
+        .input-data-container-left
+            width: 50%
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            input
+                width: 50%
+                height: 8%
+                text-align: center
+                border-radius: 10px
+            textarea
+                width: 50%
+                height: 30%
+                text-align: center
+                border-radius: 10px
+                padding: 5px
+
+        .input-data-container-rigth
+            width: 50%
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            input
+                width: 50%
+                height: 8%
+                text-align: center
+                border-radius: 10px
+            select 
+                width: 50%
+                height: 8%
+                text-align: center
+                border-radius: 10px
+            .schedules-selected-container
+                width: 90%
+                height: 10%
+                display: flex
+                flex-direction: row
+                justify-content: space-evenly
+                align-items: center
+                flex-wrap: wrap
+                p 
+                    font-size: 1.3em
+                .schedule-item
+                    width: 80px
+                    height: 70%
+                    margin: 4px 10px
+                    padding: 0
+                    text-align: center
+                    transition: all 0.8s
+                    background-color: $accent
+                    border-radius: 10px
+                    &:hover
+                        background-color: $black
+                        cursor: pointer
+                        .schedule-front
+                            display: none
+                        .schedule-back
+                            display: flex
+                    .schedule-front
+                        
+                        color: $white
+                        height: 70%
+                        text-align: center
+                        font-size: 1.2em
+                        font-weight: 600
+                        transition: all 0.8s
+                        
+                    .schedule-back
+                        text-align: center
+                        border-radius: 10px
+                        padding: 0 0 3px 5px
+                        font-size: 1.2em
+                        font-weight: 600
+                        display: none
+                        transition: all 0.8s
+
+    button
+        width: 30%
+        height: 9%
+        background-color: $accent
+        color: $white
+        border-radius: 10px
+        font-size: 1.4em
+        font-weight: bold
+        box-shadow: 10px 10px 30px  $black
+        cursor: pointer
+
+
+
+            
